@@ -12,6 +12,19 @@ const whereChart = dc.pieChart("#whereChart-here");
 const bootcampChart = dc.pieChart("#bootcampChart-here");
 const whichCampChart = dc.pieChart("#whichCampChart-here");
 
+function reset() {
+  return (
+    ageChart.filter(null) &&
+    countryChart.filter(null) &&
+    educationChart.filter(null) &&
+    minorityChart.filter(null) &&
+    roleInterestChart.filter(null) &&
+    whereChart.filter(null) &&
+    bootcampChart.filter(null) &&
+    whichCampChart.filter(null)
+  );
+}
+
 function widthAuto(element) {
   var width =
     element &&
@@ -32,7 +45,7 @@ function heightAuto(element) {
     : employmentCompositeChart.minHeight();
 }
 
-d3.csv("/data/2017-fCC-New-Coders-Survey-Data.csv").then(function(survey) {
+d3.csv("/data/2017-fCC-New-Coders-Survey-Data.csv").then(function draw(survey) {
   survey.forEach(x => (x.Age = +x.Age));
 
   const ndx = crossfilter(survey);
@@ -150,6 +163,7 @@ d3.csv("/data/2017-fCC-New-Coders-Survey-Data.csv").then(function(survey) {
     .brushOn(false)
     .yAxisLabel("Count")
     .xAxisLabel("Age")
+    .elasticY(true)
     .dimension(ageDim)
     .group(ageGroup)
     .on("renderlet", function(ageChart) {
@@ -165,6 +179,7 @@ d3.csv("/data/2017-fCC-New-Coders-Survey-Data.csv").then(function(survey) {
     .ordinalColors(["#59a9bc", "#9bd187", "#8ec9d7", "#cce8ef", "#edeeef"])
     .dimension(countryDim)
     .group(countryGroup)
+    .elasticX(true)
     .cap(10)
     .othersGrouper(false);
 
@@ -202,6 +217,7 @@ d3.csv("/data/2017-fCC-New-Coders-Survey-Data.csv").then(function(survey) {
     .ordinalColors(["#59a9bc", "#9bd187", "#8ec9d7", "#cce8ef", "#edeeef"])
     .dimension(educationDim)
     .group(educationGroup)
+    .elasticX(true)
     .cap(10)
     .othersGrouper(false);
 
@@ -238,6 +254,7 @@ d3.csv("/data/2017-fCC-New-Coders-Survey-Data.csv").then(function(survey) {
     .x(d3.scaleBand())
     .xAxisLabel("Current Job role")
     .yAxisLabel("Count")
+    .elasticY(true)
     .rightYAxisLabel("Average Salary by role")
     .xUnits(dc.units.ordinal)
     .group(compositeFieldGroup)
@@ -264,6 +281,7 @@ d3.csv("/data/2017-fCC-New-Coders-Survey-Data.csv").then(function(survey) {
   roleInterestChart
     .width(widthAuto)
     .height(heightAuto)
+    .elasticX(true)
     .margins({ top: 10, right: 50, bottom: 30, left: 50 })
     .ordinalColors(["#59a9bc", "#9bd187", "#8ec9d7", "#cce8ef", "#edeeef"])
     .dimension(roleInterestDim)
@@ -370,6 +388,9 @@ d3.csv("/data/2017-fCC-New-Coders-Survey-Data.csv").then(function(survey) {
 });
 
 // -------------------------------------Burger Menu script
+// -------------------------------------Burger Menu script
+// -------------------------------------Burger Menu script
+
 const burgerButton = document.getElementById("burgerButton");
 const burgerMenu = document.getElementById("burgerMenu");
 const burgerIcon = document.getElementById("burgerIcon");
