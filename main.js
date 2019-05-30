@@ -12,19 +12,6 @@ const whereChart = dc.pieChart("#whereChart-here");
 const bootcampChart = dc.pieChart("#bootcampChart-here");
 const whichCampChart = dc.pieChart("#whichCampChart-here");
 
-function reset() {
-  return (
-    ageChart.filter(null) &&
-    countryChart.filter(null) &&
-    educationChart.filter(null) &&
-    minorityChart.filter(null) &&
-    roleInterestChart.filter(null) &&
-    whereChart.filter(null) &&
-    bootcampChart.filter(null) &&
-    whichCampChart.filter(null)
-  );
-}
-
 function widthAuto(element) {
   var width =
     element &&
