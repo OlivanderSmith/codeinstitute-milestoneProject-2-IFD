@@ -5,65 +5,208 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>FCC community survey - data visualisation</title>
-
-    <style>
-      path.line {
-        fill: none;
-        stroke: black;
-        stroke-width: 1.5px;
-      }
-    </style>
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400"
+      rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous"
+  />
   </head>
   <body>
-    <div class="ageContainer">
-      <h1>Survey respondants age</h1>
-      <div id="ageChart-here"></div>
-    </div>
 
-    <div class="genderContainer">
-      <h1>Gender breakdown:</h1>
-      <div id="genderChart-here"></div>
-    </div>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  NAV BAR -->
+    <nav id="navBar">
+        <div class="dropdownExcluder">
+          <a href="index.html"
+            ><div class="logo">
+              <img
+                src="assets/images/sleeperLogoOffWhite.png"
+                alt="Sleeper Logo"
+              /></div
+          ></a>
+          <a>
+            <div class="dropdownMenu">
+              <button id="burgerButton" class="burgerMenu">
+                <i id="burgerIcon" class="fas fa-bars menuOrigin"></i>
+              </button>
+            </div>
+          </a>
+  
+          <div id="burgerMenu" class="dropdownContent hiddenMenu mobileMenu">
+            <a href="what-we-do.html" class="dropdownItem" id="firstDropdownItem">What we do</a>
+            <a href="our-team.html" class="dropdownItem">Who we are</a>
+            <a href="contact.html" class="dropdownItem">Contact us</a>
+          </div>
+  
+          <div class="desktopMenu">
+            <a href="what-we-do.html" class="nonDropdownMenuitem">What we do</a>
+            <div class="desktopDropdownBtn">
+              <a href="#" class="menuBtn"
+                >How to participate <i class="fas fa-angle-down"></i
+              ></a>
+              <div class="desktopDropdownContent">
+                <a href="what-we-do.html" class="dropdownItem">Learn more</a>
+                <a href="contact.html" class="dropdownItem">Contact us</a>
+              </div>
+            </div>
+            <a href="our-team.html" class="nonDropdownMenuitem">Who we are</a>
+          </div>
+        </div>
+      </nav>
 
-    <div class="countryContainer">
-      <h1>Where they live:</h1>
-      <div id="countryChart-here"></div>
-    </div>
+        <!-- _______________________________________ Header __________________________________ -->
 
-    <div class="educationContainer">
-      <h1>Level of education:</h1>
-      <div id="educationChart-here"></div>
-    </div>
+    <header>
 
-    <div class="minorityContainer">
-      <h1>Surveyers of an ethnic minority:</h1>
-      <div id="minorityChart-here"></div>
-    </div>
+      <div class="headerContainer">
+      <h1 class="title">Hi there!</h1>
+      <h2>
+        Welcome to the annual Free Code Camp (FCC) community survey dashboard.
+      </h2>
+      <p>
+        FCC's platform, publications, & forum make it one of the best places for
+        asking coding questions or brushing up on your programming skills. As
+        more people flock to join the online community, FCC have been gathering
+        data on their members via their annual survey; so, if you too are on
+        your journey to becoming a coder this dashboard is designed to help you
+        get an idea of where others stand and hopefully where the opportunities
+        lie!
+      </p>
 
-    <div class="employmentCompositeContainer">
-      <h1>Employment and income composite:</h1>
-      <div id="employmentCompositeChart-here"></div>
+      <p>
+        Full kudos to FCC for providing this data readily. Here's a link to
+        <a
+          href="https://www.kaggle.com/fccuser/the-freecodecamp-2017-new-coder-survey"
+          >Kaggle</a
+        >, where you can find the full dataset
+      </p>
+    
     </div>
+    </header>
+    <!-- _______________________________________ Section 1: Demographics __________________________________ -->
+    <section class="demographics">
+      <div id="sectionTitle">
+        <h2>Basic Demography</h2>
+        <h3>Top level survey respondents information</h3>
+      </div>
 
-    <div class="roleInterestContainer">
-      <h1>Interested in the following roles:</h1>
-      <div id="roleInterestChart-here"></div>
-    </div>
+      <div id="section1ChartContainer">
+        
+        <div class="chart1 chart">
+          <h3>Survey respondants age</h3>
+        <div class="ageContainer chartContainer">
+          <div class="dimensionalChart">
+            <div id="ageChart-here" class="fullWidth"></div>
+          </div>
+        </div></div>
 
-    <div class="whereContainer">
-      <h1>Where they want to work:</h1>
-      <div id="whereChart-here"></div>
-    </div>
+      <div class="chart2 chart">
+        <h3>Where we live</h3>
+        <div class="countryContainer chartContainer">
+          <div class="dimensionalChart">
+            <div id="countryChart-here" class="twoThirdsWidth"></div>
+          </div>
+        </div></div>
 
-    <div class="bootcampContainer">
-      <h1>% went to Bootcamp</h1>
-      <div id="bootcampChart-here"></div>
-    </div>
+      <div class="chart3 chart">
+        <h3>Gender breakdown:</h3>
+        <div class="genderContainer chartContainer">
+          <div class="dimensionalChart">
+            <div id="genderChart-here"></div>
+          </div>
+        </div></div>
 
-    <div class="whichBootcampContainer">
-      <h1>Most popular Bootcamps:</h1>
-      <div id="whichCampChart-here"></div>
+      <div class="chart4 chart">
+        <h3>Level of education:</h3>
+        <div class="educationContainer chartContainer">
+          <div class="dimensionalChart">
+            <div id="educationChart-here"></div>
+          </div>
+        </div></div>
+
+      <div class="chart5 chart">
+        <h3>Surveyers of an ethnic minority:</h3>
+        <div class="minorityContainer chartContainer">
+          <div class="dimensionalChart">
+            <div id="minorityChart-here"></div>
+        </div></div></div>
+    </section>
+
+    <!-- _______________________________________ Section 2: Employment __________________________________ -->
+    <section class="employment">
+
+      <div id="sectionTitle">
+        <h2>Employment details</h2>
+        <h3>See what others are doing and how your journey fits in</h3>
+      </div>
+
+      <div id="section2ChartContainer">
+        
+        <div class="chart6 chart">
+          <h3>Employment and income composite:</h3>
+          <div class="employmentCompositeContainer chartContainer">
+            <div class="dimensionalChartTest">
+              <div id="employmentCompositeChart-here"></div>
+            </div>
+          </div></div>
+  
+        <div class="chart7 chart">
+          <h3>Interested in the following roles:</h3>
+          <div class="roleInterestContainer chartContainer">
+            <div class="dimensionalChart">
+              <div id="roleInterestChart-here"></div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="chart8 chart">
+            <h3>Where they want to work:</h3>
+            <div class="whereContainer chartContainer">
+              <div class="dimensionalChart">
+                <div id="whereChart-here"></div>
+              </div>
+            </div>
+        </div>
+      
+      </div>
+    </section>
+
+    <!-- _______________________________________ Section 3: Bootcamp Info __________________________________ -->
+
+    <section class="bootcamp">
+
+        <div id="sectionTitle">
+            <h2>Bootcamp info</h2>
+            <h3>We can see the impact bootcamps have also</h3>
+          </div>
+
+          <div id="section3ChartContainer">
+
+      <div class="chart9 chart">
+          <h3>% went to Bootcamp</h3>
+          <div class="bootcampContainer chartContainer">
+            <div class="dimensionalChart">
+              <div id="bootcampChart-here"></div>
+            </div>
+          </div>
+      </div>
+
+      <div class="chart10 chart">
+          <h3>Most popular Bootcamps:</h3>
+          <div class="whichBootcampContainer chartContainer">
+            <div class="dimensionalChart">
+              <div id="whichCampChart-here"></div>
+            </div>
+          </div>
+      </div>
+    
     </div>
+    </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.2/d3.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.min.js"></script>
