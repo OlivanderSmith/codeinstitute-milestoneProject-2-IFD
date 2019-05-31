@@ -110,8 +110,6 @@ d3.csv("Data/2017-fCC-New-Coders-Survey-Data.csv").then(function draw(survey) {
     }
   );
 
-  console.log(compositeIncomeGroup.all());
-
   const roleInterestDim = ndx.dimension(function(d) {
     return d.JobRoleInterest;
   });
