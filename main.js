@@ -32,7 +32,7 @@ function heightAuto(element) {
     : employmentCompositeChart.minHeight();
 }
 
-d3.csv("/data/2017-fCC-New-Coders-Survey-Data.csv").then(function draw(survey) {
+d3.csv("data/2017-fCC-New-Coders-Survey-Data.csv").then(function draw(survey) {
   survey.forEach(x => (x.Age = +x.Age));
 
   const ndx = crossfilter(survey);
