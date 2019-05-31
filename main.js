@@ -32,7 +32,7 @@ function heightAuto(element) {
     : employmentCompositeChart.minHeight();
 }
 
-d3.csv("data/2017-fCC-New-Coders-Survey-Data.csv").then(function draw(survey) {
+d3.csv("Data/2017-fCC-New-Coders-Survey-Data.csv").then(function draw(survey) {
   survey.forEach(x => (x.Age = +x.Age));
 
   const ndx = crossfilter(survey);
@@ -395,7 +395,7 @@ const burgerClick = (burgerButton.onclick = () => {
     burgerMenu.classList.add(down);
     burgerMenu.classList.remove(hidden);
     burgerMenu.classList.remove(up);
-    setTimeout(() => burgerMenu.classList.add(unhidden), 500);
+    setTimeout(() => burgerMenu.classList.add(unhidden), 100);
     burgerIcon.classList.remove(startways);
     burgerIcon.classList.remove(rightways);
     burgerIcon.classList.add(sideways);
@@ -403,7 +403,7 @@ const burgerClick = (burgerButton.onclick = () => {
     burgerMenu.classList.add(up);
     burgerMenu.classList.remove(down);
     burgerMenu.classList.add(hidden);
-    setTimeout(() => burgerMenu.classList.remove(unhidden), 500);
+    setTimeout(() => burgerMenu.classList.remove(unhidden), 100);
     burgerIcon.classList.remove(sideways);
     burgerIcon.classList.add(rightways);
     burgerIcon.classList.add(startways);
@@ -418,7 +418,7 @@ var previousPosition = window.pageYOffset;
 window.onscroll = () => {
   var currentPosition = window.pageYOffset;
 
-  if (window.pageYOffset < 40) {
+  if (window.pageYOffset < 10) {
     navBar.style.top = "0";
   } else if (previousPosition > currentPosition) {
     navBar.style.top = "0";
