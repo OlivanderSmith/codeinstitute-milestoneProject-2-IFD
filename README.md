@@ -46,7 +46,7 @@ The javascript file used to create these scripts can be found here: https://gith
 
 #### The Charts:
 
-##### Demographics section
+#### Demographics section
 
         - Survey Respondents Age; non-interactive Bar chart
         - Where we live; interactive Row chart; depicts country of residence
@@ -54,9 +54,9 @@ The javascript file used to create these scripts can be found here: https://gith
         - Level of Education; interactive row chart
         - Surveyers of an Ethnic Minority; interactive Pie chart; do the participants identify as being part of an ethnic minority
 
-##### Employment section - Employment and Income composite; interactive Composite chart; shows what participants' job roles are and the average salary for that role - Interested in the following roles; interactive Row chart; Displays what role participants wish to have - Where they want to Work; interactive Pie chart; e.g. from Home, in an office etc.
+#### Employment section - Employment and Income composite; interactive Composite chart; shows what participants' job roles are and the average salary for that role - Interested in the following roles; interactive Row chart; Displays what role participants wish to have - Where they want to Work; interactive Pie chart; e.g. from Home, in an office etc.
 
-##### Bootcamp section - % went to Bootcamp; interactive Pie chart - Most popular bootcamps; interactive Pie chart; shows top 10 Bootcamps that participants did
+#### Bootcamp section - % went to Bootcamp; interactive Pie chart - Most popular bootcamps; interactive Pie chart; shows top 10 Bootcamps that participants did
 
 - Footer
   Credits FCC and links to developers GitHub account page
