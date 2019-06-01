@@ -108,6 +108,8 @@ The testing conducted to ensure that DC had rendered the charts, and at the corr
 
 The core structure of this website was developed using vanilla HTML and CSS. The CSS file can be found here: https://github.com/OlivanderSmith/codeinstitute-milestoneProject-2-IFD/tree/master/styles although not all styling was done here as the DC.js library relies on BootStrap for it's styling. What you see in the custom CSS file are CSS selectors chosen to orinet the charts, execute the design layout, build responsiveness, and to override certain DC.js's BootStrap styling.
 
+I also used Jigsaw as a CSS validator and passed with 0 errors. You can find Jigsaw here: https://jigsaw.w3.org/css-validator/
+
 ## Testing
 
 ### jshint
