@@ -58,7 +58,7 @@ The javascript file used to create these scripts can be found here: https://gith
 
 - Surveyers of an Ethnic Minority; interactive Pie chart; do the participants identify as being part of an ethnic minority
 
-#### Employment section
+#### Employment section
 
 Employment and Income composite; interactive Composite chart; shows what participants' job roles are and the average salary for that role - Interested in the following roles; interactive Row chart; Displays what role participants wish to have - Where they want to Work; interactive Pie chart; e.g. from Home, in an office etc.
 
@@ -84,7 +84,7 @@ update dataset to include 2018
 
 ## Technologies Used
 
-### JavaScript
+### JavaScript
 
 All major functionality for this project is dependent on JavaScript.
 
@@ -92,11 +92,11 @@ Javascript was used to control the functionality of the NavBar disappearing and 
 
 #### DC.js
 
-    All charts in this dashboard were rendered using the JavaScript library DC.js which you can learn more about here: https://dc-js.github.io/dc.js/
+All charts in this dashboard were rendered using the JavaScript library DC.js which you can learn more about here: https://dc-js.github.io/dc.js/
 
 #### Jasmine.js
 
-    The testing conducted to ensure that DC had rendered the charts, and at the correct size was done using the Jasmine testing framwork which you can learn about here: https://jasmine.github.io/
+The testing conducted to ensure that DC had rendered the charts, and at the correct size was done using the Jasmine testing framwork which you can learn about here: https://jasmine.github.io/
 
 ### HTML/CSS
 
