@@ -66,7 +66,7 @@ The javascript file used to create these scripts can be found here: https://gith
 
 - Where they want to Work; interactive Pie chart; e.g. from Home, in an office etc.
 
-#### Bootcamp section
+#### Bootcamp section
 
 - % went to Bootcamp; interactive Pie chart
 
