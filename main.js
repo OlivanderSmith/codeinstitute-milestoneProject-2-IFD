@@ -1,3 +1,8 @@
+window.addEventListener("resize", function() {
+  "use strict";
+  window.location.reload();
+});
+
 const ageChart = dc.barChart("#ageChart-here");
 const countryChart = dc.rowChart("#countryChart-here");
 const genderChart = dc.pieChart("#genderChart-here");
@@ -17,9 +22,7 @@ function widthAuto(element) {
     element &&
     element.getBoundingClientRect &&
     element.getBoundingClientRect().width;
-  return width && width > employmentCompositeChart.minWidth()
-    ? width
-    : employmentCompositeChart.minWidth();
+  return width && width > employmentCompositeChart.minWidth() ? width : null;
 }
 
 function heightAuto(element) {
@@ -370,6 +373,17 @@ d3.csv("Data/2017-fCC-New-Coders-Survey-Data.csv").then(function draw(survey) {
   }
   AddXAxis(countryChart, "Count");
   AddXAxis(educationChart, "Count");
+
+  window.onresize = function widthAuto(element) {
+    var width =
+      element &&
+      element.getBoundingClientRect &&
+      element.getBoundingClientRect().width;
+    return width && width > employmentCompositeChart.minWidth()
+      ? width
+      : employmentCompositeChart.minWidth();
+    dc.renderAll();
+  };
 });
 
 // -------------------------------------Burger Menu script
