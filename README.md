@@ -59,9 +59,11 @@ The javascript file used to create these scripts can be found here: https://gith
 - Surveyers of an Ethnic Minority; interactive Pie chart; do the participants identify as being part of an ethnic minority
 
 #### Employment section
+
 Employment and Income composite; interactive Composite chart; shows what participants' job roles are and the average salary for that role - Interested in the following roles; interactive Row chart; Displays what role participants wish to have - Where they want to Work; interactive Pie chart; e.g. from Home, in an office etc.
 
 #### Bootcamp section
+
 % went to Bootcamp; interactive Pie chart - Most popular bootcamps; interactive Pie chart; shows top 10 Bootcamps that participants did
 
 #### Footer
