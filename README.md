@@ -108,8 +108,6 @@ The testing conducted to ensure that DC had rendered the charts, and at the corr
 
 The core structure of this website was developed using vanilla HTML and CSS. The CSS file can be found here: https://github.com/OlivanderSmith/codeinstitute-milestoneProject-2-IFD/tree/master/styles although not all styling was done here as the DC.js library relies on BootStrap for it's styling. What you see in the custom CSS file are CSS selectors chosen to orinet the charts, execute the design layout, build responsiveness, and to override certain DC.js's BootStrap styling.
 
-I also used Jigsaw as a CSS validator and passed with 0 errors. You can find Jigsaw here: https://jigsaw.w3.org/css-validator/
-
 ## Testing
 
 ### jshint
@@ -254,6 +252,8 @@ On a desktop the site appears as designed but issues on mobile (and with respons
 When interacting with the site there are certain actions that cause the layout to change. For instance, the nav bar disappears/reappears onScroll, there are internal links to sections within the page, and clicking on certain charts in the dashboard cause other charts to restructure data and axes. All of these actions are reversible by the user and to do so is either intuitive or clearly communicated (e.g. ‘Reset Filters’ button on NavBar).
 
 Lastly there is user testing; the usual job of asking our friends and peers to weigh in on how the project performs and any issues with the UX/UI. Luckily, due to the simple nature of this project, there is very little to break, although, due to criticism, verbose analysis of the meaning of the data shown in various charts has been removed as it was deemed unnecessary (Analysis would be more relevant with a larger, and more current dataset).
+
+I also used Jigsaw as a CSS validator and passed with 0 errors. You can find Jigsaw here: https://jigsaw.w3.org/css-validator/
 
 ## Deployment
 
