@@ -224,7 +224,8 @@ describe("Dc.js dashboard rendering", function() {
 
 For HTML and CSS I have tested for 4 categories:
 
-#### Syntax:
+#### Syntax
+
 All syntax is correct as verified by VSCode’s inbuilt syntax highlighter (no warnings)
 
 #### Project:
