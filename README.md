@@ -257,7 +257,7 @@ I also used Jigsaw as a CSS validator and passed with 0 errors. You can find Jig
 
 ## Deployment
 
-This site is deployed using GitHub pages.
+This site is deployed using GitHub pages. The repo is stored on GitHub at: https://github.com/OlivanderSmith/codeinstitute-milestoneProject-2-IFD
 
 There are no differences between the development and the deployed versions of this site and they rest on the same Git branch therefore running this file locally requires no instructions
 
