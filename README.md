@@ -110,6 +110,12 @@ The core structure of this website was developed using vanilla HTML and CSS. The
 
 ## Testing
 
+### jshint
+
+jshint was used as a linter for testing my custom javascript file for any major issues and passed. What minor errors the code did receive was in relation to browser compatibility (const decleratives and fat arrow syntax were used in several functions).
+
+jshint can be found here: https://jshint.com/
+
 ### Jasmine Testing
 
 The following tests for the javascript in this project relate specifically to the rendering of charts designed using Dc.js . The tests are built using the Jasmine testing framework (https://github.com/OlivanderSmith/codeinstitute-milestoneProject-2-IFD/tree/master/jasmineTesting) that tested for svgs being appended in all designated chart divs, and that their sizing was correct for the container they were placed in. You can see the tests below:
